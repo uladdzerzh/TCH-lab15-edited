@@ -1,0 +1,8 @@
+FROM mysql:latest
+ENV MYSQL_ROOT_PASSWORD=secret
+ENV MYSQL_DATABASE=test
+ENV MYSQL_USER=user
+ENV MYSQL_PASSWORD=password
+COPY ./mysql /var/lib/mysql
+
+
