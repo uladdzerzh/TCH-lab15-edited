@@ -1,5 +1,4 @@
-FROM phpmyadmin/phpmyadmin:latest
+FROM phpmyadmin/phpmyadmin:latest AS phpmyadmin
 ENV PMA_HOST=mysql
 ENV MYSQL_ROOT_PASSWORD=secret
-COPY --from=phpmyadmin/phpmyadmin /usr/src/phpmyadmin /var/www/html
-
+COPY --from=phpmyadmin / /var/www/html
