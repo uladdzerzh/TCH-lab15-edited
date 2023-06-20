@@ -12,13 +12,13 @@ jobs:
         include:
           - dockerfile: ./Dockerfile
             context: nginx
-            image: uladdzerzh/nginx
+            image: buterbrodskij/nginx
           - dockerfile: ./Dockerfile
             context: html
-            image: uladdzerzh/html
+            image: buterbrodskij/html
           - dockerfile: ./Dockerfile
             context: mysql
-            image: uladdzerzh/mysql
+            image: buterbrodskij/mysql
 
     steps:
       - name: Checkout source code
